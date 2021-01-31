@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { validateEmail } from '../../utils/helpers';
+import './style.css';
 
 function ContactForm() {
     // initial form state
@@ -53,7 +54,7 @@ function ContactForm() {
                 </div>
                 <div>
                     <label htmlFor="message">Message:</label>
-                    <input type="message" rows="5" defaultValue={message} onBlur={handleChange} />
+                    <textarea type="message" rows="5" defaultValue={message} onBlur={handleChange} />
                 </div>
                 {errorMessage && (
                     <div>
