@@ -3,16 +3,16 @@ import React from 'react';
 const Resume = () => {
 
     return (
-        <div>
+        <section>
             <h1>Resume</h1>
-            <form method="get" action="../../assets/template/resume-template.docx">
+            <form method="get" action="resume-template.docx">
                 <button type="submit">Download my resume!</button>
             </form>
 
             <h2>Front-End Proficiencies</h2>
 
             <ul>
-                <li>HTMK</li>
+                <li>HTML</li>
                 <li>CSS</li>
                 <li>Javascript</li>
                 <li>JQuery</li>
@@ -31,7 +31,7 @@ const Resume = () => {
                 <li>MongoDB, Mongoose</li>
                 <li>REST</li>
             </ul>
-        </div>
+        </section>
     )
 }
 

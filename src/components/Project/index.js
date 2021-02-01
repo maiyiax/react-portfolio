@@ -30,7 +30,7 @@ function Project() {
     ]);
 
     return (
-        <div>
+        <section>
             <h1>Projects</h1>
             <div className='card'>
                 {projects.map((image, i) => {
@@ -42,7 +42,7 @@ function Project() {
                     />
                 })}
             </div>
-        </div>
+        </section>
     )
 }
 
