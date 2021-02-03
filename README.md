@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Pupose
+
+Create a portfolio using React.
+<br>
+<br>
+Click [here](http://maiyiax.github.io/react-portfolio) to navigate to the deployed site.
+<br>
+<br>
+![application](./src/assets/portfolio.gif)
+
 ## Available Scripts
 
 In the project directory, you can run:
