@@ -1,5 +1,4 @@
 import React from 'react';
-import './style.css';
 
 function Nav(props) {
     const tabs = ['About', 'Portfolio', 'Contact', 'Resume']

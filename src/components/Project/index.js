@@ -1,47 +1,74 @@
 import React, { useState } from 'react';
 
 function Project() {
-    const [projects] = useState([
+    const [projectItems] = useState([
         {
-            name: 'Notetaker',
-            description: 'Express.js app used to write and save notes.',
-            link: 'https://morning-springs-52870.herokuapp.com/'
+            id: 0,
+            name: "Notetaker",
+            description: "Express.js app used to write and save notes.",
+            deployed: "https://morning-springs-52870.herokuapp.com/",
+            github: "https://github.com/maiyiax/note-taker",
+            // location: "../../assets/projects/0.jpg"
         },
         {
-            name: 'Recipe API',
-            description: 'App used to search for food and drink recipes.',
-            link: 'https://jess-smith49.github.io/the-menu/'
+            id: 1,
+            name: "Recipe API",
+            description: "App used to search for food and drink recipes.",
+            deployed: "https://jess-smith49.github.io/the-menu/",
+            github: "https://github.com/maiyiax/the-menu",
+            // location: "../../assets/projects/1.jpg"
         },
         {
-            name: 'Run Buddy',
-            description: 'Website that offers training services.',
-            link: 'https://maiyiax.github.io/run-buddy/'
+            id: 2,
+            name: "Run Buddy",
+            description: "Website that offers training services.",
+            deployed: "https://maiyiax.github.io/run-buddy/",
+            github:"https://github.com/maiyiax/run-buddy",
+            // location: "../../assets/projects/2.jpg"
         },
         {
-            name: 'Tech Blog',
-            description: 'CMS style website for publishing blog posts.',
-            link: 'salty-dusk-80859.herokuapp.com/'
+            id: 3,
+            name: "Tech Blog",
+            description: "CMS style website for publishing blog posts.",
+            deployed: "salty-dusk-80859.herokuapp.com/",
+            github: "https://github.com/maiyiax/mvc-tech-blog",
+            // location: "../../assets/projects/3.jpg"
         },
         {
-            name: 'Plant App',
-            description: 'Application to help find houseplants.',
-            link: 'https://blooming-brook-59963.herokuapp.com/'
+            id: 4,
+            name: "Plant App",
+            description: "Application to help find houseplants.",
+            deployed: "https://blooming-brook-59963.herokuapp.com/",
+            github: "https://github.com/maiyiax/project-2",
+            // location: "../../assets/projects/4.jpg"
         },
+        {
+            id: 5,
+            name: "Budget Tracker",
+            description: "Budget tracking application with offline functionality.",
+            deployed: "https://safe-meadow-57026.herokuapp.com/",
+            github: "https://github.com/maiyiax/pwa-budget-tracker",
+            // location: "../../assets/projects/5.jpg"
+        }
     ]);
 
     return (
         <section>
-            <h1>Projects</h1>
-            <div className='card'>
-                {projects.map((image, i) => {
-                    <img
-                        src={require(`../../assets/projects/${i}.jpg`).default}
-                        alt={image.name}
-                        className='img-thumbnail mx-1'
-                        key={image.name}
-                    />
-                })}
-            </div>
+            <h1 className='title'>Projects</h1>
+            {projectItems.map(projects => {
+                return (
+                <div className="container" key={projects.id}>
+                    <img src={require(`../../assets/projects/${projects.id}.jpg`).default} alt={projects.name} className="project-image"></img>
+                    <details>
+                        <h3>{projects.name}</h3>
+                        <p>{projects.description}</p>
+                        <a href={projects.deployed} target="blank">Deployed Site</a>
+                        <br></br>
+                        <a href={projects.github} target="__blank"><i className="fab fa-github-square fa-2x"></i></a>
+                    </details>
+                </div>
+                )
+            })}
         </section>
     )
 }

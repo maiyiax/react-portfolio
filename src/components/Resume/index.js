@@ -4,10 +4,8 @@ const Resume = () => {
 
     return (
         <section>
-            <h1>Resume</h1>
-            <form method="get" action="resume-template.docx">
-                <button type="submit">Download my resume!</button>
-            </form>
+            <h1 className='title'>Resume</h1>
+            <a href="../../assets/template/resume-template.docx" download>Download my resume!</a>
 
             <h2>Front-End Proficiencies</h2>
 
