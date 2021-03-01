@@ -44,10 +44,10 @@ function Project() {
         },
         {
             id: 5,
-            name: "Budget Tracker",
-            description: "Budget tracking application with offline functionality.",
-            deployed: "https://safe-meadow-57026.herokuapp.com/",
-            github: "https://github.com/maiyiax/pwa-budget-tracker",
+            name: "Dev Learn",
+            description: "App for building flashcards",
+            deployed: "https://murmuring-scrubland-26245.herokuapp.com/",
+            github: "https://github.com/jess-smith49/dev-tools",
             // location: "../../assets/projects/5.jpg"
         }
     ]);
